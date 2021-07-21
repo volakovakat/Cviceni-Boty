@@ -29,21 +29,26 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0 auto;
     box-shadow: 3px 3px 20px #dddbdb;
+    border-radius: 5px;
 }
 
 .vizual {
-    background: linear-gradient(#06d7c1, #50cc49);
+    background: linear-gradient(180deg,#06d7c1, #50cc49);
     position: relative;
     flex-basis: 50%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .detaily {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width: 50%;
-    flex-shrink: 0;
     padding: 30px;
     flex-basis: 50%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .logo {
@@ -99,8 +104,10 @@ body {
     font-weight: 400;
 }
 
-hr {
-    margin: 30px auto;
+.cara {
+    width: 100%;
+    border: none;
+    height: 2px;
     background-color: #06d7c1;
 }
 
@@ -108,33 +115,40 @@ hr {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .velikosti {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 20px;
     font-size: 14px;
     font-weight: 400;
     list-style-type: none;
+    flex-grow: 1;
+    align-content: flex-start;
 }
 
 ul {
     padding: 0;
 }
 
-li {
-  padding: 4px;  
-}
-
-.vybrana {
-    color: #f15f42;
-    border: 1px solid #f15f42;
+.velikosti li a {
+    border: 1px solid transparent;
     border-radius: 50%;
-    
+    color: inherit;
+    outline: none; 
+    padding: 4px;
 }
 
-.akce {
-    position: absolute;
+.velikosti li a:hover,
+.velikosti li a:focus {
+    border-color: currentColor;
+    color: #f15f42;
+}
+
+.tlacitko {
+    display: inline-block;
     left: 30px;
     bottom: 30px;
     background-color: #f15f42;
@@ -145,6 +159,12 @@ li {
     border-radius: 5px;
     box-shadow: 3px 3px 5px #d0cfcf;
 
+}
+
+.tlacitko:hover,
+.tlacitko:focus {
+    background-color: #cd5138;
+    border-color: currentColor;
 }
 
 a {
