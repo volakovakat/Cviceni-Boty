@@ -4,6 +4,7 @@ html { box-sizing: border-box; }
 
 body {
     text-rendering: optimizeLegibility;
+    background-color: #f5f5f5;
 }
 
 /*
@@ -21,3 +22,133 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+.zbozi {
+    display: flex;
+    max-width: 670px;
+    height: 440px;
+    font-family: 'Rubik', sans-serif;
+    margin: 0 auto;
+    box-shadow: 3px 3px 20px #dddbdb;
+}
+
+.vizual {
+    background: linear-gradient(#06d7c1, #50cc49);
+    position: relative;
+    flex-basis: 50%;
+}
+
+.detaily {
+    position: relative;
+    background-color: white;
+    width: 50%;
+    flex-shrink: 0;
+    padding: 30px;
+    flex-basis: 50%;
+}
+
+.logo {
+    margin: 30px;
+}
+
+.slogan {
+    margin-left: 30px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bota {
+    position: absolute;
+    left: -80px;
+}
+
+.cenovka {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    text-align: right;
+    color: white;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.produkt {
+   font-size: 14px;
+   font-weight: 400;
+   color: #b6b6b6; 
+}
+
+.popis {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+hr {
+    margin: 30px auto;
+    background-color: #06d7c1;
+}
+
+.parametr {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.velikosti {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+  padding: 4px;  
+}
+
+.vybrana {
+    color: #f15f42;
+    border: 1px solid #f15f42;
+    border-radius: 50%;
+    
+}
+
+.akce {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    background-color: #f15f42;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #d0cfcf;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
